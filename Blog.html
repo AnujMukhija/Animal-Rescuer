@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="blog.css">
+  <title></title>
+</head>
+<body onload="checkCookies()">
+<div class="page-wrap">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">AnimalRescuers</h3>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="Home page.html">HOME</a></li>
+                     <div class="dropdown">
+                     <li><button class="dropbtn">ABOUT</button></li>
+                       <div class="sub-menu">                        
+                            <a href="Our Mission page.html" target="_blank">OUR MISSION</a>
+                            <a href="Our Vision page.html" target="_blank">OUR VISION</a>
+                            <a href="Our Belief page.html" target="_blank">OUR BELIEF</a>
+                        </div></div>
+                    <li><a href="#">NEWS</a></li>
+                    <div class="dropdown">
+                    <li > <button class="dropbtn">ADOPT</button></li>
+                        <div class="sub-menu">
+                        
+                        <a href="#">WHY ADOPTION</a>
+                        <a href="https://www.petfinder.com/user/profile/create/?source=home-hero&experience=loginAtEnd" target=_blank>FIND A PET</a>
+                        <a href="#">PET CARE</a>
+                        
+                        </div>
+                        </div>
+                    <li><a href="#" onclick="myFunction()" >DONATE</a></li>
+
+                    <div class="dropdown">
+                     <li><button class="dropbtn">MORE</button></li>
+                       <div class="sub-menu">                        
+                            <a href="Contact form.html" target="_blank">CONTACT US</a>
+                            <a href="Privacy Policies.html" target="_blank">PRIVACY POLICIES</a>
+                            <a href="Feedback Form.html" target="_blank">WEBSITE FEEDBACK</a>
+                        </div>
+                       </div>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type the text" id="myInput">
+                <a href="https://www.dictionary.com/browse" target="_blank"> <button class="btn" id="myBtn">Search</button></a>
+            </div>
+          </div>
+  <div class="slider-container">
+      <div class="slide">
+        
+        <img src="https://c.ndtvimg.com/2021-07/rldktm3o_pm-modi-_625x300_16_July_21.jpg" alt="" ><br>
+        <h2>PM Modi Supports Stray Animals During Covid</h2>
+        <h3>Prime Minister Narendra Modi has lauded a retired army officer for <br>supporting stray animals during the coronavirus pandemic, and <br>said such an initiative was a source of inspiration for the society.</h3><br>
+        <a href="https://www.ndtv.com/india-news/pm-modi-hails-retired-army-major-pramila-singh-for-supporting-stray-animals-during-covid-19-times-2489266" class="btn-2">Read More</a>
+      </div>
+      <div class="slide">
+        <img src="https://gaadiwaadi.com/wp-content/uploads/2020/09/John-Abraham-Donates-His-Gypsy-to-animal-NGO-1068x712.jpg" alt="" ><br>
+        <h2>John Abraham Gave His Gypsy To Animal NGO</h2>
+        <h3>According to AMTM's post on social media, the 4x4 SUV will be used <BR> at its animal sanctuary in Kolad, Maharashtra, for rescue operations<BR> and medical logistics from Mumbai To Kolad and vice versa.</h3><br>
+        <a href="https://www.carandbike.com/news/john-abraham-donates-his-maruti-gypsy-to-an-animal-non-profit-organisation-2292656" class="btn-2">Read More</a>
+      </div>
+      <div class="slide">
+        <img src="https://thelogicalindian.com/h-upload/2020/08/25/180260-strayweb-1.jpg" alt="" ><br>
+        <h2>Stray Dog, Shivering In Rain, Receives A Touching Gift From Woman.</h2>
+        <h3>A woman's viral act of kindness towards a stray dog garnered viral attention<br> last year. The video, shows a woman giving her scarf to a dog shivering in<br>the rain. Indian Forest Services officer Susanta Nanda said,"God does not <br>look at your possessions, but he looks at your heart & deeds,"</h3><br>
+        <a href="https://www.ndtv.com/offbeat/stray-dog-shivering-in-rain-receives-a-touching-gift-from-woman-watch-2284495" class="btn-2">Read More</a>
+      </div>
+      <div class="slide">
+        <img src="https://c.ndtvimg.com/2020-10/o3297k5o_eureka-apta-and-joanna-wang_625x300_12_October_20.jpg" alt="" ><br>
+        <h2>Odisha Couple Gets Married, celebrates by feeding 500 dogs.</h2>
+        <h3>When Eureka Apta and Joanna Wang got married on September 25, they arranged<br> for a special meal for about 500 stray dogs in the city by tying up with a local<br> animal rescue organisation to feed over 500 stray dogs across Bhubaneswar.</h3><br>
+        <a href="https://www.ndtv.com/offbeat/odisha-couple-gets-married-celebrates-by-feeding-500-stray-dogs-2309012" class="btn-2">Read More</a>
+      </div>
+    </div>
+
+
+
+    <script>
+    const slider = document.querySelector('.slider-container'),
+    slides = Array.from(document.querySelectorAll('.slide'))
+
+let isDragging = false,
+  startPos = 0,
+  currentTranslate = 0,
+  prevTranslate = 0,
+  animationID = 0,
+  currentIndex = 0
+
+slides.forEach((slide, index) => {
+  const slideImage = slide.querySelector('img')
+  slideImage.addEventListener('dragstart', (e) => e.preventDefault())
+  // Touch events
+  slide.addEventListener('touchstart', touchStart(index))
+  slide.addEventListener('touchend', touchEnd)
+  slide.addEventListener('touchmove', touchMove)
+  // Mouse events
+  slide.addEventListener('mousedown', touchStart(index))
+  slide.addEventListener('mouseup', touchEnd)
+  slide.addEventListener('mouseleave', touchEnd)
+  slide.addEventListener('mousemove', touchMove)
+})
+// Disable context menu
+window.oncontextmenu = function (event) {
+  event.preventDefault()
+  event.stopPropagation()
+  return false
+}
+function touchStart(index) {
+  return function (event) {
+    currentIndex = index
+    startPos = getPositionX(event)
+    isDragging = true
+    // https://css-tricks.com/using-requestanimationframe/
+    animationID = requestAnimationFrame(animation)
+    slider.classList.add('grabbing')
+  }
+}
+function touchEnd() {
+  isDragging = false
+  cancelAnimationFrame(animationID)
+  const movedBy = currentTranslate - prevTranslate
+  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
+  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
+  setPositionByIndex()
+  slider.classList.remove('grabbing')
+}
+function touchMove(event) {
+  if (isDragging) {
+    const currentPosition = getPositionX(event)
+    currentTranslate = prevTranslate + currentPosition - startPos
+  }
+}
+function getPositionX(event) {
+  return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
+}
+function animation() {
+  setSliderPosition()
+  if (isDragging) requestAnimationFrame(animation)
+}
+function setSliderPosition() {
+  slider.style.transform = `translateX(${currentTranslate}px)`
+}
+function setPositionByIndex() {
+  currentTranslate = currentIndex * -window.innerWidth
+  prevTranslate = currentTranslate
+  setSliderPosition()
+}
+</script>
+
+
+<script>
+  function myFunction() {
+      window.open('./payment.html'," ",'width=750, height=500');
+  }
+</script>
+</body>
+</html>

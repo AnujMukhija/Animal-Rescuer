@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    background-image:  linear-gradient(to top, rgba(0,0,0,0.3)50%,rgba(0,0,0,0.3)50%), url("temp/sobaka-drug-ulitsa-12.jpg");
+    /*background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.5)), url("C:/Users/amish/Downloads/sobaka-ulitsa-drug.jpg");*/
+    /*background: #525252;*/
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 259px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 64px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 7px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 85px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 300px;
+    float: left;
+    margin-left: 380px;
+    padding-left: 110px;
+    margin-top: 5px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+.page-wrap {
+width: 100%;
+margin: 0 auto;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fffffff2;
+    position: relative;
+    /* padding-left: 10px; */
+}
+
+.content .par{
+    padding-left: 64px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    padding-left: 64px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 64px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    font-family:Times New Roman;
+    FONT-WEIGHT:BOLD;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 45px;
+}
+
+@keyframes flipinx {
+0%{ opacity: 0; transform: perspective(400px) rotateX(90deg); }
+40%{ transform: perspective(400px) rotateX(-10deg); }
+70%{ transform: perspective(400px) rotateX(10deg); }
+100%{ opacity: 1; transform: perspective(400px) rotateX(0deg); }
+}
+
+.form{
+    width: 277px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.3)50%,rgba(0,0,0,0.3)50%);
+    position: absolute;
+    top: 120px;
+    left: 910px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 120px;
+    padding-left: 50px;
+    animation:flipinx 2s ease-in 0s 1 normal;
+}
+
+.form .h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    align-content: center;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    padding-right: 25px;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-right: 25px;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #ffffff;
+    font-size: 30px;
+    padding-left: 16px;
+    padding-top: 30px;
+    transition: 0.5s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+.page-wrap {
+width: 100%;
+margin: 0 auto;
+}
+
+.dropbtn{
+    border:none;
+    cursor:pointer;
+    padding:4px;
+    background-color:transparent;
+    font-weight:bold;
+    color:white;
+    font-size: 14px;
+}
+
+.sub-menu{
+  display: none;
+  position: absolute;
+  background-color:#000000;
+  min-width: 120px;
+  box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:85px;   
+}
+.sub-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.sub-menu a:hover {
+    background-color:#ff7200;
+    color: black;
+}
+.dropdown:hover .sub-menu {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+.content{
+    display: flex;
+    min-height: 70vh;
+}
+.content section{
+    margin-top: 6vh;
+    margin-left: 20vh;
+}
+.content h2{
+    color: #ff7200;
+    font-size: 28px;
+}
+.content-form{
+    margin-top: 7rem;
+}
+section i{
+    border-radius: 50%;
+    width: 38px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.menubtn{
+  float: left;
+  margin-top: 25px;
+}
+.menubtn  div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+
+
+

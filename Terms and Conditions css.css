@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+.main{
+    width: 100%;
+    /* background-image: url("C:\Users\amish\Downloads\sobaka-ulitsa-drug.jpg"); */
+    background-position: center;
+    background-size: cover;
+    height: 270%;
+    /* background-image:  linear-gradient(to top, rgba(0,0,0,0.3)50%,rgba(0,0,0,0.3)50%); */
+    background-image: url("C:/Users/amish/Downloads/tTI5Fa.jpg");
+    
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 259px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 64px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 7px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 85px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 300px;
+    float: left;
+    margin-left: 380px;
+    padding-left: 110px;
+    margin-top: 5px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.page-wrap {
+width: 100%;
+margin: 0 auto;
+}
+
+.dropbtn{
+    border:none;
+    cursor:pointer;
+    padding:4px;
+    background-color:transparent;
+    font-weight:bold;
+    color:white;
+    font-size: 14px;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color:#000000;
+  min-width: 120px;
+  box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:85px;   
+}
+.sub-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.sub-menu a:hover {
+    background-color:#ff7200;
+    color: black;
+}
+.dropdown:hover .sub-menu {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+.container{
+   background-color: transparent;
+  /* border: solid;
+   border-width: 1px;*/
+   border-radius: 7px;
+   border-color: #d2d1d3;
+   margin: 93px 175px 20px 175px;
+   padding-left: 60px;
+   padding-right: 62px;
+   padding-top: 35px;
+   padding-bottom: 30px;
+   position: relative;
+   color: white;
+   /*background: #78787800;*/
+   display: flex;
+   flex-wrap: wrap;
+   font-size: 18px;
+   line-height: 24px;
+}
+
+
+#a{
+            text-align: center;
+            font-weight: bold;
+            border: hidden;
+            padding-left: 31%;
+            
+            color: #ff7200;
+
+        }
+
+.container h3{
+    color: #ff7200;
+    font-size: 24px;
+}

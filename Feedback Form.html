@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="Feedback Form css.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+</head>
+
+<body>
+    <div class="page-wrap">
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h3 class="logo">AnimalRescuers</h3>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="Home page.html">HOME</a></li>
+                        <div class="dropdown">
+                            <li><button class="dropbtn">ABOUT</button></li>
+                            <div class="sub-menu">
+                                <a href="Our Mission page.html" target="_blank">OUR MISSION</a>
+                                <a href="Our Vision page.html" target="_blank">OUR VISION</a>
+                                <a href="Our Belief page.html" target="_blank">OUR BELIEF</a>
+                            </div>
+                        </div>
+                        <li><a href="News.html" target="_blank">NEWS</a></li>
+                        <div class="dropdown">
+                            <li> <button class="dropbtn">ADOPT</button></li>
+                            <div class="sub-menu">
+
+                                <a href="Pet Care.html">PET CARE</a>
+                                <a href="Find a pet.html" target=_blank>FIND A PET</a>
+                                <a href="FAQ Adoption.html" target="_blank">ADOPTION FAQs</a>
+
+                            </div>
+                        </div>
+                        <li><a href="#" onclick="myFunction()">DONATE</a></li>
+                        <div class="dropdown">
+                            <li><button class="dropbtn">MORE</button></li>
+                            <div class="sub-menu">
+                                <a href="Contact form.html" target="_blank">CONTACT US</a>
+                                <a href="Privacy Policies.html" target="_blank">PRIVACY POLICIES</a>
+                                <a href="Feedback Form.html" target="_blank">WEBSITE FEEDBACK</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="search">
+                    <input class="srch" type="search" name="" placeholder="Type the text" id="myInput">
+                    <a href="https://www.dictionary.com/browse" target="_blank"> <button class="btn">Search</button></a>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <h1 id="a">
+                    <center>WEBSITE FEEDBACK</center>
+                </h1>
+                <br>
+
+                <p class="b">We welcome all feedback on our website’s performance, whether positive or negative. Please
+                    use the form below to leave your feedback. If you’re reporting a bug or an issue you’ve encountered,
+                    please try to upload a screenshot as it will significantly help our efforts to solve it
+                    for&nbsp;you.</p><br><br>
+                <form class="b" action="Home page.html" method="post">
+                    <b>Full Name</b> :
+                    <input type="text" name="Full Name" required><br><br>
+                    <b>Email Address</b> :
+                    <input type="email" name="Email id" required placeholder="example@example.com"><br><br>
+                    <b>Gender</b> :
+                    Male <input type="radio" name="gender" id="cb1">&nbsp;
+                    Female <input type="radio" name="gender" id="cb2">
+                    <br><br>
+                    <b class="feedback">Feedback</b> :
+                    <textarea type="text" row="5" col="15" name="address" required placeholder="Type your feedback"> </textarea><br><br>
+                    <label for="myfile"><b>Screenshot</b>:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <p>
+                        Upload a screenshot of the issue you are having. This will significantly help us to identify and
+                        resolve the issue.<br>
+                        One file only.<br>
+                        10 MB limit.<br>
+                        Allowed types: gif, jpg, jpeg, png.<br>
+                    </p>
+                    <button type="submit" class="sbtn" class="c">Submit</button>&nbsp;
+                    <button type="reset" class="sbtn" class="c">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var input = document.getElementById("myInput");
+        input.addEventListener("keyup", function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+            }
+        });
+
+
+        // var cb1 = document.getElementById("cb1");
+        // var cb2 = document.getElementById("cb2");
+
+        // if (cb1.checked == true) {
+        //     alert("Selected user is " + cb1.value);
+        // }
+        // else {
+        //     alert("Selected user is " + cb2.value);
+        // }
+
+
+    </script>
+
+    <script>
+        function myFunction() {
+            window.open('./payment.html', " ", 'width=750, height=500');
+        }
+    </script>
+
+</body>
+
+</html>
