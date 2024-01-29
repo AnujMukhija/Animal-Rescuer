@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> why adoption</title>
+  <link rel="stylesheet" type="text/css" href="whyadoptioncss(1).css">
+</head>
+
+<body>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <div><img src="C:\Users\amish\Downloads\1st image.jpeg" class="slideshowimg">
+            <div class="text-head-2">Be The Kindest<br> Soul,
+                To Adopt <BR>The Needful Souls</div><br>
+                <div class="text-head-1">Know Why You Should Adopt A Stray..</div></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+
+            <img src="C:\Users\amish\Downloads\WhatsApp Image 2022-01-21 at 4.51.30 PM.jpeg" class="slideshowimg">
+           
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="C:\Users\amish\Downloads\WhatsApp Image 2022-01-21 at 4.52.07 PM (1).jpeg" class="slideshowimg">
+            
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="C:\Users\amish\Downloads\WhatsApp Image 2022-01-21 at 4.51.29 PM (1).jpeg"class="slideshowimg">
+            
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="C:\Users\amish\Downloads\WhatsApp Image 2022-01-21 at 4.51.29 PM.jpeg" class="slideshowimg">
+            
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="C:\Users\amish\Downloads\WhatsApp Image 2022-01-21 at 4.52.07 PM.jpeg" class="slideshowimg">
+            
+        </div>
+        
+    </div><br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div><br>
+
+        <h1 align="center">Why Should We Adopt A Stray?</h1>
+
+    <div class="content-container">
+        <p><ol><li>It has been found that only one out of every 10 puppies will get a loving or permanent home.</li><br>
+        <li>The major reason why animals end up in shelters is that owners give them up, or they are found on the street by animal control.</li><br>
+        <li>Every year, approximately 2.7 million cats and dogs are killed because the available shelters are too full, and the homes open to adopting animals aren’t enough. You can decide to act as a publicist for your local shelter if you would like to help stray animals find homes.</li><br>
+        <li>Approximately 7.6 million companion animals enter animal shelters nationwide every year. Of those, approximately 3.9 million are dogs, and 3.4 million are cats.</li><br>
+        <li>According to details made available by the National Council on Pet Population Study and Policy (NCPPSP), not more than 15 to 20% of dogs and 2% of kittens are returned to their owners.</li><br>
+        <li>25% of dogs that end up in local shelters are purebred.</li><br>
+        <li>About twice as many animals end up in shelters as strays compared to the number of animals that are relinquished by their human owners.</li><br>
+        <li>It is not possible to determine the number of stray dogs and cats that live in the United States of America. The current estimate for cats alone range as high as 70 million.</li><br>
+        <li>Only 10% of the animals that are received by shelters have been neutered or spayed.</li><br>
+        <li>Overpopulation, as a result of owners letting their pets deliberately or accidentally reproduce, sees millions of these “unwanted” animals killed every year.</li><br>
+    </ol></p>
+
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>
